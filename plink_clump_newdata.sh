@@ -1,0 +1,1 @@
+./plink2 --bfile ./data/clump/plink/ALL.chr$1.phase3_v5.shapeit2_mvncall_integrated.noSingleton.genotypes.vcf.gz --clump ./data/clump/GWAS_EA_excl23andMe_colname_fix.txt --clump-p1 5e-8 --clump-r2 .1 --out ./data/clump/results_newdata/EA_clumped.chr.$1

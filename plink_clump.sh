@@ -1,0 +1,1 @@
+./plink2 --bfile ./data/clump/1000G_EUR_Phase3_plink/1000G.EUR.QC.$1 --clump ./data/clump/GWAS_EA_excl23andMe_colname_fix.txt --clump-p1 5e-8 --clump-r2 .1 --out ./data/clump/results/EA_clumped.chr.$1
