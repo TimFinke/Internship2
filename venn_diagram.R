@@ -1,7 +1,6 @@
 library("tidyverse")
 library("gplots")
 
-############################# hieronder is pas werkend
 ## construct some fake gene names..
 oneName <- function() paste(sample(LETTERS, 5, replace = TRUE), collapse = "")
 geneNames <- replicate(1000, oneName())
