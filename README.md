@@ -1,18 +1,18 @@
 # Internship2
 ## Scripts used for internship II
 ### Scripts used on server NESDA
+Script dependencies NESDA server.R
+
 Script GE Analysis.R
 
 Script data cleaning.R
 
-Script dependencies NESDA server.R
-
 ### Scripts used on own computer
+Script dependencies.R
+
 Script Clump Plink.R
 
 Script FUMA Results.R
-
-Script dependencies.R
 
 plink_clump.sh
 
