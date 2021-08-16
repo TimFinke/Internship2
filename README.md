@@ -14,6 +14,8 @@ Script Clump Plink.R
 
 Script FUMA Results.R
 
+Script SuppData Descriptives.R
+
 plink_clump.sh
 
 plink_clump_newdata.sh
