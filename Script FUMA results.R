@@ -5,7 +5,6 @@ path_edu <- file.path("./data/FUMA results/FUMA_gene2func62788")
 path_hsvl <- file.path("./data/FUMA results/FUMA_gene2func62789")
 path_increg <- file.path("./data/FUMA results/FUMA_gene2func62790")
 
-
 '''
 path_hsvl_model0 <- file.path("./data/FUMA results/FUMA_gene2func61376/")
 path_hsvl_model1 <- file.path("./data/FUMA results/FUMA_gene2func61374/")
@@ -40,6 +39,26 @@ png(str_c("./plots/FUMA/Income Occupation/model1/expression_GTEx.png"),
 incocc_model$expression_GTEx
 dev.off()
 
+png(str_c("./plots/FUMA/Income Occupation/model1/expression_brainspan_age.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+incocc_model$expression_brainspan_age
+dev.off()
+
+png(str_c("./plots/FUMA/Income Occupation/model1/expression_brainspan_dev.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+incocc_model$expression_brainspan_dev
+dev.off()
+
+png(str_c("./plots/FUMA/Income Occupation/model1/expression_GTEx_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+incocc_model$expression_GTEx_tissue
+dev.off()
+
+png(str_c("./plots/FUMA/Income Occupation/model1/expression_GTEx_gen_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+incocc_model$expression_GTEx_gen_tissue
+dev.off()
+
 png(str_c("./plots/FUMA/Income Occupation/model1/gridplot_DEG.png"), 
     width = 20, height = 20, units = "in", res = 800)
 incocc_model$gridplot_DEG # do not include, no sig
@@ -64,6 +83,26 @@ dev.off()
 png(str_c("./plots/FUMA/Education/model1/expression_GTEx.png"), 
     width = 20, height = 25, units = "in", res = 800)
 edu_model$expression_GTEx
+dev.off()
+
+png(str_c("./plots/FUMA/Education/model1/expression_brainspan_age.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+edu_model$expression_brainspan_age
+dev.off()
+
+png(str_c("./plots/FUMA/Education/model1/expression_brainspan_dev.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+edu_model$expression_brainspan_dev
+dev.off()
+
+png(str_c("./plots/FUMA/Education/model1/expression_GTEx_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+edu_model$expression_GTEx_tissue
+dev.off()
+
+png(str_c("./plots/FUMA/Education/model1/expression_GTEx_gen_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+edu_model$expression_GTEx_gen_tissue
 dev.off()
 
 png(str_c("./plots/FUMA/Education/model1/gridplot_DEG.png"), 
@@ -116,6 +155,26 @@ png(str_c("./plots/FUMA/House Value/model1/expression_GTEx.png"),
 hsvl_model$expression_GTEx
 dev.off()
 
+png(str_c("./plots/FUMA/House Value/model1/expression_brainspan_age.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+hsvl_model$expression_brainspan_age
+dev.off()
+
+png(str_c("./plots/FUMA/House Value/model1/expression_brainspan_dev.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+hsvl_model$expression_brainspan_dev
+dev.off()
+
+png(str_c("./plots/FUMA/House Value/model1/expression_GTEx_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+hsvl_model$expression_GTEx_tissue
+dev.off()
+
+png(str_c("./plots/FUMA/House Value/model1/expression_GTEx_gen_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+hsvl_model$expression_GTEx_gen_tissue
+dev.off()
+
 png(str_c("./plots/FUMA/House Value/model1/gridplot_DEG.png"), 
     width = 20, height = 20, units = "in", res = 800)
 hsvl_model$gridplot_DEG # do not include, no sig
@@ -142,6 +201,26 @@ png(str_c("./plots/FUMA/Income Region/model1/expression_GTEx.png"),
 increg_model$expression_GTEx
 dev.off()
 
+png(str_c("./plots/FUMA/Income Region/model1/expression_brainspan_age.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+increg_model$expression_brainspan_age
+dev.off()
+
+png(str_c("./plots/FUMA/Income Region/model1/expression_brainspan_dev.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+increg_model$expression_brainspan_dev
+dev.off()
+
+png(str_c("./plots/FUMA/Income Region/model1/expression_GTEx_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+increg_model$expression_GTEx_tissue
+dev.off()
+
+png(str_c("./plots/FUMA/Income Region/model1/expression_GTEx_gen_tissue.png"), 
+    width = 20, height = 25, units = "in", res = 800)
+increg_model$expression_GTEx_gen_tissue
+dev.off()
+
 png(str_c("./plots/FUMA/Income Region/model1/gridplot_DEG.png"), 
     width = 20, height = 20, units = "in", res = 800)
 increg_model$gridplot_DEG # do not include, no sig
@@ -151,7 +230,6 @@ png(str_c("./plots/FUMA/Income Region/model1/gridplot_GS.png"),
     width = 40, height = 20, units = "in", res = 800)
 increg_model$gridplot_GS # 1 gene set, mention in text, do not include figure
 dev.off()
-
 
 ### save models
 save(edu_model, hsvl_model, incocc_model, increg_model,
