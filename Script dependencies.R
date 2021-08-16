@@ -632,11 +632,28 @@ library("openxlsx")
                                       ncol = 2, nrow = 2, 
                                       labels = LETTERS[1:4])
   
+  # gridplots subdivided
+  expression_brainspan_age <- plot_grid(expa, rexpa,
+                                        ncol = 1, nrow = 2, 
+                                        labels = LETTERS[1:2])
+  expression_brainspan_dev <- plot_grid(expds, rexpds,
+                                        ncol = 1, nrow = 2, 
+                                        labels = LETTERS[1:2])
+  expression_GTEx_tissue <- plot_grid(expt, rexpt,
+                                      ncol = 1, nrow = 2, 
+                                      labels = LETTERS[1:2])
+  expression_GTEx_gen_tissue <- plot_grid(gexpt, rgexpt,
+                                          ncol = 1, nrow = 2, 
+                                          labels = LETTERS[1:2])
   
   output$gridplot_DEG <- gridplot_DEG
   output$gridplot_GS <- GeneSets$comboplot
   output$expression_brainspan <- expression_brainspan
+  output$expression_brainspan_age <- expression_brainspan_age
+  output$expression_brainspan_dev <- expression_brainspan_dev
   output$expression_GTEx <- expression_GTEx
+  output$expression_GTEx_tissue <- expression_GTEx_tissue
+  output$expression_GTEx_gen_tissue <- expression_GTEx_gen_tissue
   
   
   # data 
